@@ -4,14 +4,14 @@
     "name": "Рилски манастир",
     "location": "Рила",
     "description": "Най-голямата и най-известна източноправославна обител в България, обект на ЮНЕСКО.",
-    "image_url": "https://images.unsplash.com/photo-1601113091108-7b4b3e3e0dca?w=1200"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Rila_Monastery%2C_August_2013.jpg/1280px-Rila_Monastery%2C_August_2013.jpg"
   },
   {
     "id": 2,
     "name": "Античен театър",
     "location": "Пловдив",
     "description": "Римски амфитеатър от II век, съхранен и до днес в центъра на Стария град.",
-    "image_url": "https://images.unsplash.com/photo-1591806024714-8526f4c8e7c3?w=1200"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Roman_Theatre_Plovdiv_3.jpg/1280px-Roman_Theatre_Plovdiv_3.jpg"
   },
   {
     "id": 3,

@@ -6,7 +6,7 @@
     "duration_days": 2,
     "price_bgn": 180,
     "description": "Двудневен поход до ледниковите езера на връх Дамга с нощувка в планинска хижа.",
-    "image_url": "https://images.unsplash.com/photo-1602001307526-eb7b84a2cbbe?w=1200"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vr-ezeren-pan-sm.jpg/1280px-Vr-ezeren-pan-sm.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "duration_days": 1,
     "price_bgn": 95,
     "description": "Разходка из Античния театър, Небет тепе и възрожденските къщи на най-стария жив град в Европа.",
-    "image_url": "https://images.unsplash.com/photo-1591806024714-8526f4c8e7c3?w=1200"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Old_town_hisar_kapia.jpg/1280px-Old_town_hisar_kapia.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "duration_days": 3,
     "price_bgn": 320,
     "description": "Три дни по крайбрежието с посещение на Стария Несебър (UNESCO) и рибарския Созопол.",
-    "image_url": "https://images.unsplash.com/photo-1601625289863-e7bc3b6b6b1d?w=1200"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Sozopol2.jpg/1280px-Sozopol2.jpg"
   },
   {
     "id": 4,
@@ -42,6 +42,6 @@
     "duration_days": 2,
     "price_bgn": 230,
     "description": "Поход в Пирин планина и дегустация в най-малкия град в България – Мелник.",
-    "image_url": "https://images.unsplash.com/photo-1600423115367-87ea7661b6a4?w=1200"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Meleniko.jpg"
   }
 ]
