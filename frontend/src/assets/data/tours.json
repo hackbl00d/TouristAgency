@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Седемте Рилски езера",
+    "region": "Рила",
+    "duration_days": 2,
+    "price_bgn": 180,
+    "description": "Двудневен поход до ледниковите езера на връх Дамга с нощувка в планинска хижа.",
+    "image_url": "https://images.unsplash.com/photo-1602001307526-eb7b84a2cbbe?w=1200"
+  },
+  {
+    "id": 2,
+    "name": "Старият Пловдив",
+    "region": "Пловдив",
+    "duration_days": 1,
+    "price_bgn": 95,
+    "description": "Разходка из Античния театър, Небет тепе и възрожденските къщи на най-стария жив град в Европа.",
+    "image_url": "https://images.unsplash.com/photo-1591806024714-8526f4c8e7c3?w=1200"
+  },
+  {
+    "id": 3,
+    "name": "Перла на Черно море – Созопол и Несебър",
+    "region": "Южно Черноморие",
+    "duration_days": 3,
+    "price_bgn": 320,
+    "description": "Три дни по крайбрежието с посещение на Стария Несебър (UNESCO) и рибарския Созопол.",
+    "image_url": "https://images.unsplash.com/photo-1601625289863-e7bc3b6b6b1d?w=1200"
+  },
+  {
+    "id": 4,
+    "name": "Велико Търново и Арбанаси",
+    "region": "Централна Стара планина",
+    "duration_days": 2,
+    "price_bgn": 210,
+    "description": "Средновековната столица Царевец и каменните къщи на Арбанаси.",
+    "image_url": "https://images.unsplash.com/photo-1551649001-7a2482d98d05?w=1200"
+  },
+  {
+    "id": 5,
+    "name": "Пирин и Мелник",
+    "region": "Пирин",
+    "duration_days": 2,
+    "price_bgn": 230,
+    "description": "Поход в Пирин планина и дегустация в най-малкия град в България – Мелник.",
+    "image_url": "https://images.unsplash.com/photo-1600423115367-87ea7661b6a4?w=1200"
+  }
+]

@@ -41,11 +41,5 @@ export const routes: Routes = [
       import('./pages/contacts.component').then((m) => m.ContactsComponent),
     title: 'Контакти',
   },
-  {
-    path: 'admin',
-    loadComponent: () =>
-      import('./pages/admin.component').then((m) => m.AdminComponent),
-    title: 'Администрация',
-  },
   { path: '**', redirectTo: '' },
 ];

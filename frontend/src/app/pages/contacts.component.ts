@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -10,6 +10,8 @@ interface ContactForm {
   subject: string;
   message: string;
 }
+
+const AGENCY_EMAIL = 'alex.vesely07@gmail.com';
 
 @Component({
   selector: 'app-contacts',
@@ -57,17 +59,12 @@ interface ContactForm {
       <div class="container form-wrap">
         <p class="eyebrow">Форма за контакт</p>
         <h2>Пишете ни</h2>
+        <p class="lede">
+          Попълнете формата и натиснете „Изпрати“ – ще се отвори Вашият
+          пощенски клиент с готово съобщение към нас.
+        </p>
 
-        @if (ok()) {
-          <div class="notice notice--ok">
-            Благодарим! Съобщението е получено – ще се свържем с Вас.
-          </div>
-        }
-        @if (err()) {
-          <div class="notice notice--err">{{ err() }}</div>
-        }
-
-        <form (ngSubmit)="submit()" #f="ngForm" class="form">
+        <form (ngSubmit)="sendMail()" #f="ngForm" class="form">
           <div class="row">
             <div>
               <label for="name">Име</label>
@@ -104,9 +101,7 @@ interface ContactForm {
             minlength="5"
           ></textarea>
 
-          <button type="submit" [disabled]="sending() || f.invalid">
-            {{ sending() ? 'Изпращане…' : 'Изпрати' }}
-          </button>
+          <button type="submit" [disabled]="f.invalid">Изпрати</button>
         </form>
       </div>
     </section>
@@ -158,10 +153,6 @@ export class ContactsComponent {
   readonly team = signal<TeamMember[]>([]);
   readonly teamLoading = signal(true);
 
-  readonly sending = signal(false);
-  readonly ok = signal(false);
-  readonly err = signal<string | null>(null);
-
   form: ContactForm = { name: '', email: '', subject: '', message: '' };
 
   constructor() {
@@ -174,30 +165,16 @@ export class ContactsComponent {
     });
   }
 
-  submit(): void {
-    this.ok.set(false);
-    this.err.set(null);
-    this.sending.set(true);
-
-    const payload = {
-      name: this.form.name,
-      email: this.form.email,
-      subject: this.form.subject || undefined,
-      message: this.form.message,
-    };
-
-    this.api.submitContact(payload).subscribe({
-      next: () => {
-        this.ok.set(true);
-        this.sending.set(false);
-        this.form = { name: '', email: '', subject: '', message: '' };
-      },
-      error: (e) => {
-        this.err.set(
-          e?.error?.error ?? 'Грешка при изпращане. Моля опитайте отново.',
-        );
-        this.sending.set(false);
-      },
-    });
+  sendMail(): void {
+    const subject = this.form.subject?.trim() || 'Запитване от сайта';
+    const body =
+      `Име: ${this.form.name}\n` +
+      `Имейл: ${this.form.email}\n\n` +
+      `${this.form.message}`;
+    const href =
+      `mailto:${AGENCY_EMAIL}` +
+      `?subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+    window.location.href = href;
   }
 }

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Хотел „Хебър\"",
+    "city": "Пазарджик",
+    "stars": 4,
+    "price_per_night_bgn": 140,
+    "description": "Модерен семеен хотел с изглед към центъра на града.",
+    "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200"
+  },
+  {
+    "id": 2,
+    "name": "Хотел „Болярски\"",
+    "city": "Велико Търново",
+    "stars": 4,
+    "price_per_night_bgn": 165,
+    "description": "Бутиков хотел с гледка към Царевец и река Янтра.",
+    "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200"
+  },
+  {
+    "id": 3,
+    "name": "Хотел „Алегра\"",
+    "city": "Несебър",
+    "stars": 3,
+    "price_per_night_bgn": 120,
+    "description": "Уютен хотел на две крачки от стария град и плажа.",
+    "image_url": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1200"
+  },
+  {
+    "id": 4,
+    "name": "Хотел „Борован\"",
+    "city": "Банско",
+    "stars": 5,
+    "price_per_night_bgn": 260,
+    "description": "Луксозен СПА хотел в сърцето на Пирин планина.",
+    "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200"
+  },
+  {
+    "id": 5,
+    "name": "Хотел „Пловдив 2000\"",
+    "city": "Пловдив",
+    "stars": 4,
+    "price_per_night_bgn": 150,
+    "description": "Централно разположен хотел близо до Главната улица.",
+    "image_url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200"
+  }
+]
